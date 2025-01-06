@@ -180,10 +180,11 @@ class BarView extends View {
                 // main Line
                 hashMarkPaint.setStrokeWidth(longHashMarkWidth);
                 hashMarkPaint.setColor(longHashMarkColor);
+
                 canvas.drawLine(startLineX,
                         longHashStartY,
                         startLineX,
-                        longHashStartY + (int) (longHashMarkHeight),
+                        longHashStartY + (int) (longHashMarkHeight - (longHashMarkHeight - smallHashMarkHeight) / 2f),
                         hashMarkPaint); // main line
 
                 if (longHashMarkTextVisible) {
