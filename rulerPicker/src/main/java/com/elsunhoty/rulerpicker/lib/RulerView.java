@@ -19,7 +19,7 @@ public class RulerView extends FrameLayout {
     private float indicatorWidth = Defaults.INDICATOR_WIDTH;
     private int indicatorColor = Defaults.INDICATOR_COLOR;
     RulerScroller rulerScroller;
-    RulerGravity gravity = RulerGravity.BOTTOM;
+    RulerGravity gravity = RulerGravity.CENTER;
 
     public RulerView(@NonNull Context context) {
         super(context);
