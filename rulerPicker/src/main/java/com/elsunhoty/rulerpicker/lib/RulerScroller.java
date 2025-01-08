@@ -54,6 +54,9 @@ class RulerScroller extends HorizontalScrollView {
                 Defaults.MIN_VALUE);
     }
 
+    public void setRulerMaxValue(int rulerMaxValue) {
+        this.rulerMaxValue = rulerMaxValue;
+    }
 
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {

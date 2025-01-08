@@ -31,6 +31,10 @@ public class RulerView extends FrameLayout {
         setUpView(context, attrs, 0, 0);
     }
 
+    public void setRulerMaxValue(int rulerMaxValue) {
+        rulerScroller.setRulerMaxValue(rulerMaxValue);
+    }
+
     public RulerView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setUpView(context, attrs, defStyleAttr, defStyleAttr);
