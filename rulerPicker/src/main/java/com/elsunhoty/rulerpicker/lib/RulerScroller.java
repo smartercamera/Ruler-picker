@@ -33,10 +33,11 @@ class RulerScroller extends HorizontalScrollView {
         setUpView(context, attrs, defStyleAttr);
     }
 
+    private BarView draw;
 
     private void setUpView(Context context, AttributeSet attrs, int defStyleAttr) {
         setUpAttributes(attrs);
-        final BarView draw = new BarView(context, attrs, defStyleAttr);
+        draw = new BarView(context, attrs, defStyleAttr);
         draw.setId(generateViewId());
         addView(draw);
     }
@@ -56,6 +57,8 @@ class RulerScroller extends HorizontalScrollView {
 
     public void setRulerMaxValue(int rulerMaxValue) {
         this.rulerMaxValue = rulerMaxValue;
+        draw.setRulerMaxValue(rulerMaxValue);
+        requestLayout();
     }
 
     @Override

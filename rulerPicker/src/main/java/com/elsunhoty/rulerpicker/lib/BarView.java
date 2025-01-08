@@ -222,5 +222,10 @@ class BarView extends View {
         return dp * ((float) metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
     }
 
+    public void setRulerMaxValue(int rulerMaxValue) {
+        this.rulerMaxValue = rulerMaxValue;
+        requestLayout();
+
+    }
 }
 

@@ -22,7 +22,6 @@
         app:ruler_indicator_color="#73FF7474"
         app:ruler_indicator_height="40dp"
         app:ruler_indicator_width="3dp"
-        app:ruler_initial_value="152"
         app:ruler_long_hash_mark_color="#FFFFFF"
         app:ruler_long_hash_mark_height="30dp"
         app:ruler_long_hash_mark_text_color="#00BFBFBF"

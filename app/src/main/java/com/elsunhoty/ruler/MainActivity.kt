@@ -28,9 +28,11 @@ class MainActivity : AppCompatActivity() {
         tvCurrentValue = findViewById(R.id.tvCurrentValue)
         btnCurrentValue = findViewById(R.id.btnCurrentValue)
         btnScrollToPosition = findViewById(R.id.btnScrollToPosition)
+
     }
 
     private fun actions() {
+        viewRuler.setRulerMaxValue(10)
         viewRuler.setOnRulerEvent { value, fromUser ->
             Log.d(TAG, "actions() called with: value = $value, fromUser = $fromUser")
             tvOnRulerValueChanges.text =
