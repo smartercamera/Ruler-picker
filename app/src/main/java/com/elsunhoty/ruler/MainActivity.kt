@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupView() {
         viewRuler = findViewById(R.id.viewRuler)
+        //viewRuler.setRulerMaxValue(30)
         tvOnRulerValueChanges = findViewById(R.id.tvOnRulerValueChanges)
         tvCurrentValue = findViewById(R.id.tvCurrentValue)
         btnCurrentValue = findViewById(R.id.btnCurrentValue)

@@ -115,7 +115,7 @@ class BarView extends View {
 //        int shortIndicatorCounter = (rulerMaxValue - rulerMinValue) - tallIndicatorCounter;
 //        int shortIndicatorTotalWidth = shortIndicatorCounter * smallHashMarkWidth;
         int width = (int) (widthMeasureSpec
-                + ((rulerMaxValue - rulerMinValue) * hashMarkDistance));
+                + ((rulerMaxValue - rulerMinValue) * hashMarkDistance)) + 2;
 //                + tallIndicatorTotalWidth
 //                + shortIndicatorTotalWidth;
         setMeasuredDimension(width, heightMeasureSpec);
